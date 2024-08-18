@@ -5,6 +5,12 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
+  if (num%2==1 || num%2==0) {
+    return true;
+  } else {
+    return false;
+  }
+  /*Number.isInteger(num)*/
 }
 
 module.exports = esEntero;

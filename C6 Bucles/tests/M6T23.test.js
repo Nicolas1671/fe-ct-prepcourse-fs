@@ -39,3 +39,11 @@ test("10 no es un número primo", () => {
 test("11 es un número primo", () => {
   expect(esNumeroPrimo(11)).toBe(true);
 });
+
+test("281 es un número primo", () => {
+  expect(esNumeroPrimo(281)).toBe(true);
+});
+
+test("144 no es un número primo", () => {
+  expect(esNumeroPrimo(144)).toBe(false);
+});
