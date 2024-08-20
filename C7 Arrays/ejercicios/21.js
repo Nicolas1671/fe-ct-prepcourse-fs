@@ -3,6 +3,23 @@ function mesesDelAño(array) {
   // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
   // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
   // Tu código:
+  var i = 0;
+  var meses = [];
+  var resto = [];
+  while (i<array.length) {
+    if (array[i]=="Enero" || array[i]=="Marzo" || array[i]=="Noviembre") {
+      meses.push(array[i]);
+      i++;
+    } else {
+      resto.push(array[i]);
+      i++;
+    }
+  }
+  if (meses.length==3) {
+    return meses;
+  } else {
+    return "No se encontraron los meses pedidos";
+  }
 }
 
 module.exports = mesesDelAño;
