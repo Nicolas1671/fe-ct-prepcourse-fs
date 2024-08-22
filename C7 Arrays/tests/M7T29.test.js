@@ -3,7 +3,7 @@ const encontrarNumeroFaltante = require('../ejercicios/29');
 test('encuentra el número faltante en una secuencia de números enteros consecutivos', () => {
   expect(encontrarNumeroFaltante([1, 2, 3, 4, 6, 7, 8, 9])).toBe(5);
   expect(encontrarNumeroFaltante([1, 3, 4, 5, 6, 7, 8, 9])).toBe(2);
-  expect(encontrarNumeroFaltante([1, 2, 3, 4, 5, 6, 7, 8, 10])).toBe(9);
+  expect(encontrarNumeroFaltante([1, 2, 3, 4, 5, 6, 7, 8, 10, 11])).toBe(9);
   expect(
     encontrarNumeroFaltante([
       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
