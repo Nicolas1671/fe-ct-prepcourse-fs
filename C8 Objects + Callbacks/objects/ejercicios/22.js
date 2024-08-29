@@ -25,3 +25,35 @@ function esAnagrama(str1, str2) {
 }
 
 module.exports = esAnagrama;
+
+/*
+function esAnagrama(str1, str2) {
+  // Si las longitudes son diferentes, no pueden ser anagramas
+  if (str1.length !== str2.length) {
+    return false;
+  }
+
+  // Crear objetos para contar las frecuencias de cada letra en ambas cadenas
+  const charCount1 = {};
+  const charCount2 = {};
+
+  // Contar las frecuencias de cada letra en la primera cadena
+  for (const char of str1) {
+    charCount1[char] = (charCount1[char] || 0) + 1;
+  }
+
+  // Contar las frecuencias de cada letra en la segunda cadena
+  for (const char of str2) {
+    charCount2[char] = (charCount2[char] || 0) + 1;
+  }
+
+  // Comparar los objetos de conteo
+  for (const char in charCount1) {
+    if (charCount1[char] !== charCount2[char]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+*/
