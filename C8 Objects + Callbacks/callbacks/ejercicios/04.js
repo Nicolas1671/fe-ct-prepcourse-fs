@@ -3,7 +3,12 @@ function sumarArray(arrayOfNumbers, cb) {
    // Suma todos los números del arreglo.
    // Este resultado debes pasárselo como argumento al callback recibido.
    // NOTA: no debes retornar nada.
-   // Tu código:
+   // Tu código: 
+   var suma = 0;  
+   for (i=0; i<arrayOfNumbers.length; i++) {
+     suma = suma + arrayOfNumbers[i];
+   }
+   cb(suma);
 }
 
 module.exports = sumarArray;
